@@ -1,0 +1,1572 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)file:///Users/amalia/Climatech%20Jobs/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climatech Jobs for Israel</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #1a202c;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: #059669;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+    .header-logo h1 { font-size: 2.5rem; font-weight: 700; }
+    .header p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 0.25rem; }
+    .header .last-updated { font-size: 0.9rem; opacity: 0.8; }
+
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+
+    .filters {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .filter-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr auto;
+      gap: 1rem;
+      align-items: end;
+    }
+    .filter-group { display: flex; flex-direction: column; }
+    .filter-group label { font-weight: 600; margin-bottom: 0.5rem; color: #374151; }
+    .filter-input {
+      padding: 0.75rem;
+      border: 2px solid #e5e7eb;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    .filter-input:focus { outline: none; border-color: #059669; }
+    .clear-btn {
+      background: #6b7280;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .clear-btn:hover { background: #4b5563; }
+
+    .results-info { margin-bottom: 1.5rem; font-weight: 600; color: #059669; }
+
+    .jobs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
+    .job-card {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .job-card:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+    .company-tag {
+      background: #059669;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .job-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.3; }
+    .job-location { color: #6b7280; margin-bottom: 1rem; font-size: 0.9rem; }
+    .apply-btn {
+      background: #059669;
+      color: white;
+      text-decoration: none;
+      padding: 0.6rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      display: inline-block;
+      font-size: 0.9rem;
+      transition: background 0.2s ease;
+    }
+    .apply-btn:hover { background: #047857; }
+
+    .no-results { text-align: center; padding: 3rem; color: #6b7280; display: none; }
+
+    .cta-banner {
+      background: #ecfdf5;
+      border-bottom: 2px solid #059669;
+      text-align: center;
+      padding: 0.9rem 1rem;
+    }
+    .cta-banner a {
+      color: #059669;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1.05rem;
+    }
+    .cta-banner a:hover { text-decoration: underline; }
+
+    .footer {
+      background: #1a202c;
+      color: #cbd5e0;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+    .footer p + p { margin-top: 0.5rem; }
+    .footer strong { color: #f7fafc; }
+    .footer a { color: #6ee7b7; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .header h1 { font-size: 1.8rem; }
+      .filter-row { grid-template-columns: 1fr; }
+      .jobs-grid { grid-template-columns: 1fr; }
+      .container { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-logo">
+    <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="22" cy="22" r="20" stroke="white" stroke-width="3"></circle>
+      <ellipse cx="22" cy="22" rx="9" ry="20" stroke="white" stroke-width="3"></ellipse>
+      <line x1="2" y1="22" x2="42" y2="22" stroke="white" stroke-width="3"></line>
+      <path d="M5 14h34M5 30h34" stroke="white" stroke-width="3" stroke-linecap="round"></path>
+    </svg>
+    <h1>Climatech Jobs for Israel</h1>
+  </div>
+  <p>A snapshot of opportunities in Israel's growing climatech sector.</p>
+  <div class="last-updated">Last Updated 22 June 2026</div>
+</div>
+
+<div class="cta-banner">
+  <a href="https://www.climatechjobs.org/" target="_blank">🌱 Join Israel's Climatech Jobs Community →</a>
+</div>
+
+<div class="container">
+  <div class="filters">
+    <div class="filter-row">
+      <div class="filter-group">
+        <label for="searchInput">Search</label>
+        <input type="text" id="searchInput" class="filter-input" placeholder="Search jobs, companies, or locations...">
+      </div>
+      <div class="filter-group">
+        <label for="companyFilter">Company</label>
+        <select id="companyFilter" class="filter-input">
+          <option value="">All Companies</option>
+        <option value="Aleph Farms">Aleph Farms</option><option value="Augury">Augury</option><option value="Beewise">Beewise</option><option value="Bluewhite">Bluewhite</option><option value="Driivz">Driivz</option><option value="Eco Wave Power">Eco Wave Power</option><option value="Electreon">Electreon</option><option value="Enlight">Enlight</option><option value="GreenRoad">GreenRoad</option><option value="Nofar Energy">Nofar Energy</option><option value="Optibus">Optibus</option><option value="Percepto">Percepto</option><option value="Prisma Photonics">Prisma Photonics</option><option value="SolarEdge">SolarEdge</option><option value="Sungrow Power">Sungrow Power</option><option value="Tomorrow.io">Tomorrow.io</option><option value="Via">Via</option><option value="Wiliot">Wiliot</option></select>
+      </div>
+      <div class="filter-group">
+        <label for="locationFilter">Location</label>
+        <select id="locationFilter" class="filter-input">
+          <option value="">All Locations</option>
+        <option value="Beit HaEmek (North)">Beit HaEmek (North)</option><option value="Beit Yanai">Beit Yanai</option><option value="Caesarea">Caesarea</option><option value="Haifa">Haifa</option><option value="Herzliya">Herzliya</option><option value="Israel (Multiple Locations)">Israel (Multiple Locations)</option><option value="Modi&#39;in">Modi'in</option><option value="Nazareth Illit Area">Nazareth Illit Area</option><option value="Petah Tikva">Petah Tikva</option><option value="Rehovot">Rehovot</option><option value="Tel Aviv">Tel Aviv</option></select>
+      </div>
+      <button id="clearBtn" class="clear-btn">Clear</button>
+    </div>
+  </div>
+
+  <div id="resultsInfo" class="results-info">Showing 160 of 160 jobs</div>
+  <div id="jobsGrid" class="jobs-grid" style="display: grid;">
+      <div class="job-card">
+        <span class="company-tag">Aleph Farms</span>
+        <h3 class="job-title">Process Development Technician</h3>
+        <div class="job-location">📍 Rehovot, Center District, Israel</div>
+        <a href="https://aleph-farms.com/careers/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Aleph Farms</span>
+        <h3 class="job-title">Freelance PR &amp; Marketing Operations (Israel)</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://aleph-farms.com/careers/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Aleph Farms</span>
+        <h3 class="job-title">QC Specialist</h3>
+        <div class="job-location">📍 Rehovot, Center District, Israel</div>
+        <a href="https://aleph-farms.com/careers/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Augury</span>
+        <h3 class="job-title">AI Applied Scientist – Insights &amp; Recommendations</h3>
+        <div class="job-location">📍 Haifa, Israel (Hybrid)</div>
+        <a href="https://www.augury.com/careers/ai-applied-scientist-insights-recommendations-8549883002/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Augury</span>
+        <h3 class="job-title">AI/ML Applied Researcher – Insights &amp; Recommendations</h3>
+        <div class="job-location">📍 Haifa, Israel (Hybrid)</div>
+        <a href="https://www.augury.com/careers/ai-ml-applied-researcher-insights-recommendations-8549267002/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Augury</span>
+        <h3 class="job-title">AI-Native Mobile Engineer – Deployment Platform</h3>
+        <div class="job-location">📍 Haifa, Israel (Hybrid)</div>
+        <a href="https://www.augury.com/careers/ai-native-mobile-engineer-deployment-platform-8565892002/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Augury</span>
+        <h3 class="job-title">Algorithm and Applied AI Scientist (DSP)</h3>
+        <div class="job-location">📍 Haifa, Israel (Hybrid)</div>
+        <a href="https://www.augury.com/careers/algorithm-and-applied-ai-scientist-dsp-8563603002/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Augury</span>
+        <h3 class="job-title">Experienced AI Software Engineer</h3>
+        <div class="job-location">📍 Haifa, Israel (Hybrid)</div>
+        <a href="https://www.augury.com/careers/experienced-ai-software-engineer-8542462002/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Augury</span>
+        <h3 class="job-title">ML Ops Engineer</h3>
+        <div class="job-location">📍 Haifa, Israel (Hybrid)</div>
+        <a href="https://www.augury.com/careers/ml-ops-engineer-8587599002/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Augury</span>
+        <h3 class="job-title">Software Data Engineer, Data Platform</h3>
+        <div class="job-location">📍 Haifa, Israel (Hybrid)</div>
+        <a href="https://www.augury.com/careers/software-data-engineer-data-platform-8576525002/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Beewise</span>
+        <h3 class="job-title">Hardware Team Lead</h3>
+        <div class="job-location">📍 Beit HaEmek (Northern District), IL</div>
+        <a href="https://www.comeet.com/jobs/beewise/0B.001/hardware-team-lead/E5.A61" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Beewise</span>
+        <h3 class="job-title">Head of System Engineering</h3>
+        <div class="job-location">📍 Beit HaEmek (Northern District), IL</div>
+        <a href="https://www.comeet.com/jobs/beewise/0B.001/head-of-system-engineering/DE.C6D" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Beewise</span>
+        <h3 class="job-title">Mechanical Engineer</h3>
+        <div class="job-location">📍 Beit HaEmek (Northern District), IL</div>
+        <a href="https://www.comeet.com/jobs/beewise/0B.001/mechanical-engineer/2E.C68" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Beewise</span>
+        <h3 class="job-title">Senior Electronics Practical Engineer</h3>
+        <div class="job-location">📍 Beit HaEmek (Northern District), IL</div>
+        <a href="https://www.comeet.com/jobs/beewise/0B.001/senior-electronics-practical-engineer/8F.A6C" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Beewise</span>
+        <h3 class="job-title">Senior Product Manager</h3>
+        <div class="job-location">📍 Beit HaEmek (Northern District), IL</div>
+        <a href="https://www.comeet.com/jobs/beewise/0B.001/senior-product-manager/9F.A65" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Bluewhite</span>
+        <h3 class="job-title">IT &amp; Information Systems Manager</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.comeet.com/jobs/bluewhite/D5.00D/it--information-systems-manager/D9.76D" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Bluewhite</span>
+        <h3 class="job-title">Senior Backend Software Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.comeet.com/jobs/bluewhite/D5.00D/senior-backend-software-engineer/45.C61" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Driivz</span>
+        <h3 class="job-title">Backend Team Lead</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://driivz.com/careers/co/israel/FA.B68/backend-team-lead/all" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Driivz</span>
+        <h3 class="job-title">Chief Of Staff</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://driivz.com/careers/co/israel/BC.B66/chief-of-staff/all" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Driivz</span>
+        <h3 class="job-title">Senior PMO</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://driivz.com/careers/co/israel/39.B6D/senior-pmo/all" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Eco Wave Power</span>
+        <h3 class="job-title">Mechanical Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.ecowavepower.com/about/careers/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Eco Wave Power</span>
+        <h3 class="job-title">Project Manager (Mechanical Engineer - a MUST!)</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.ecowavepower.com/about/careers/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">FP&amp;A and Capital Markets Manager</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/fpa-and-capital-markets-manager/54.C6C" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Director of Business Development – Enlight Local</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/director-of-business-development---enlight-local/BA.E51" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Project Development Manager – Enlight Local</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/project-development-manager---enlight-local/4D.B6C" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Director of Business Development – Agricultural Sector</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/director-of-business-development---agricultural-sector/0A.B68" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Director of Data Center Strategy &amp; Development</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/director-of-data-center-strategy--development/5B.A65" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Project Development Manager – Renewable Energy</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/project-development-manager--renewable-energy-greenfield-to-infrastructure/E2.C63" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Director of Finance, MENA</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/director-of-finance-mena/52.A69" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Project Finance Manager</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/project-finance-manager/5C.761" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Global HRBP</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/global-hrbp/17.669" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Administrative Manager</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/administrative-manager/D1.D6F" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Director of Engineering</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/director-of-engineering/33.B61" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Operational Technology Manager</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/operational-technology-manager/4D.869" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Operations Coordinator – Maternity Leave Replacement</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/operations-coordinator--maternity-leave-replacement/92.B66" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">PMO Construction</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/pmo-construction/AD.A6B" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Procurement Manager</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/procurement-manager/BF.B5D" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Project Engineer</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/project-engineer/69.066" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Project Manager – Construction</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/project-manager--construction--israel-europe/A3.D4A" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Technical Director</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/technical-director/D4.56C" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Enlight</span>
+        <h3 class="job-title">Wind Farm Manager</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.comeet.com/jobs/enlightenergy/99.006/wind-farm-manager/9E.A69" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Electreon</span>
+        <h3 class="job-title">Electrical Power Engineering</h3>
+        <div class="job-location">📍 HQ Beit Yanni, Israel</div>
+        <a href="https://electreon.com/about-us/careers/electrical-power-engineering/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Electreon</span>
+        <h3 class="job-title">Embedded Software Engineer</h3>
+        <div class="job-location">📍 Beit Yanai, Israel</div>
+        <a href="https://electreon.com/about-us/careers/embedded-software-engineer/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Electreon</span>
+        <h3 class="job-title">Electrical Engineering Team Leader</h3>
+        <div class="job-location">📍 HQ Beit Yanni, Israel</div>
+        <a href="https://electreon.com/about-us/careers/electrical-engineering-team-leader/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Electreon</span>
+        <h3 class="job-title">GA/VU INTEGRATOR</h3>
+        <div class="job-location">📍 Beit Yanni, Israel</div>
+        <a href="https://electreon.com/about-us/careers/ga-vu-integrator/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Electreon</span>
+        <h3 class="job-title">System Engineer</h3>
+        <div class="job-location">📍 Beit Yanni, Israel</div>
+        <a href="https://electreon.com/about-us/careers/system-engineer/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Electreon</span>
+        <h3 class="job-title">Strategic Buyer</h3>
+        <div class="job-location">📍 HQ Israel</div>
+        <a href="https://electreon.com/about-us/careers/strategic-buyer/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Electreon</span>
+        <h3 class="job-title">Mechanical Design Engineer Leader</h3>
+        <div class="job-location">📍 HQ Israel</div>
+        <a href="https://electreon.com/about-us/careers/mechanical-design-engineer-leader/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">GreenRoad</span>
+        <h3 class="job-title">IT Manager</h3>
+        <div class="job-location">📍 Israel (Hybrid)</div>
+        <a href="https://greenroad.com/career/it-manager/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Optibus</span>
+        <h3 class="job-title">Chief Architect</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://optibus.com/company/careers/jobs/co/israel/52.A53/chief-architect/all" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Optibus</span>
+        <h3 class="job-title">Engineering Group Manager</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://optibus.com/company/careers/jobs/co/israel/AB.A64/engineering-group-manager/all" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Optibus</span>
+        <h3 class="job-title">Software Engineer, Gen AI</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://optibus.com/company/careers/jobs/co/israel/B4.861/software-engineer-gen-ai/all" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Optibus</span>
+        <h3 class="job-title">Technical Writer</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://optibus.com/company/careers/jobs/co/israel/49.769/technical-writer/all" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Percepto</span>
+        <h3 class="job-title">Information Security Officer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://percepto.co/careers/information-security-officer-13-b6e/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Percepto</span>
+        <h3 class="job-title">Buyer Planner</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://percepto.co/careers/buyer-planner-ee-a6c/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Percepto</span>
+        <h3 class="job-title">Hardware Design Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://percepto.co/careers/hardware-design-engineer-0a-964/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Percepto</span>
+        <h3 class="job-title">Data Insights Operations</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://percepto.co/careers/data-insights-operations-ff-c6f/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Prisma Photonics</span>
+        <h3 class="job-title">Data Operations Specialist (Maternity Leave Replacement)</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.prismaphotonics.com/job/data-operations-specialist-maternity-leave-replacement/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Prisma Photonics</span>
+        <h3 class="job-title">Director of AI</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.prismaphotonics.com/job/director-of-ai/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Prisma Photonics</span>
+        <h3 class="job-title">DSP Researcher</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.prismaphotonics.com/job/dsp-researcher/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Prisma Photonics</span>
+        <h3 class="job-title">Electro Optics Physicist</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.prismaphotonics.com/job/electro-optics-physicist/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Prisma Photonics</span>
+        <h3 class="job-title">Senior Product Analyst</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.prismaphotonics.com/job/senior-product-analyst/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Prisma Photonics</span>
+        <h3 class="job-title">Talent Acquisition &amp; HR Admin (Maternity leave replacement)</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://www.prismaphotonics.com/job/talent-acquisition-hr-admin-maternity-leave-replacement/" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Battery Test Technician</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/battery-test-technician/7B.A61" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Embedded Software Engineer</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-embedded-software-engineer/3D.56F" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Mechanical Team Leader – ATE Department</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/mechanical-team-leader--ate-department/B3.B62" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Assembly Technician</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/assembly-technician/7C.76B" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Components Reliability Engineer</h3>
+        <div class="job-location">📍 Maskit H – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/components-reliability-engineer/9B.A6A" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Debug Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/debug-engineer/8C.867" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Document Control Specialist</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/document-control-specialist/86.B63" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Electrical Practical Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/electrical-practical-engineer/3B.564" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Embedded Software Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-software-engineer/3B.561" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Embedded Software Engineer – UPS</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-software-engineer---ups/D7.767" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Experienced ATE HW Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-ate-hw-engineer/0E.860" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Experienced Hardware Engineer – High Power</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-hardware-engineer---high-power/D7.766" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Hardware Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/hardware-engineer/2B.56F" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Integration Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/integration-engineer/C1.365" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Junior Hardware Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/junior-hardware-engineer/72.A67" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Mechanical Team Lead</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/mechanical--team-lead/3B.562" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">NPI Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/npi-engineer/B1.B64" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Technical Product Manager</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-technical-product-manager/7D.C6D" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Building Electrician – Herzliya</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/building-electrician---herzliya/F3.B68" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Building Electrician – Modi'in</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/building-electrician---modiin/F3.B63" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Front Desk Associate – Reception</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/front-desk-associate---reception/F3.B69" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Bookkeeper</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/bookkeeper/D8.B60" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">FP&amp;A Inventory Finance Business Partner</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/fpa-inventory-finance-business-partner/D6.167" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">ATE Testers Technician (Level 2)</h3>
+        <div class="job-location">📍 Ziporit – Nazareth Iliit, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/ate-testers-technician-level-2/93.76F" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">ATE Testers Technicians Supervisor</h3>
+        <div class="job-location">📍 Ziporit – Nazareth Iliit, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/ate-testers-technicians-supervisor/0E.76A" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Automatic Test Equipment Engineer</h3>
+        <div class="job-location">📍 Ziporit – Nazareth Iliit, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/automatic-test-equipment-engineer/0B.965" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Programmer SMT &amp; AOI</h3>
+        <div class="job-location">📍 Ziporit – Nazareth Iliit, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/programmer-smt--aoi/64.862" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Maintenance Technician</h3>
+        <div class="job-location">📍 Ziporit – Nazareth Iliit, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/maintenance-technician/52.757" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Cyber Security Architect</h3>
+        <div class="job-location">📍 Maskit A – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/cyber-security-architect/A4.A61" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Operations Forecast Lead</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/operations-forecast-lead/D7.363" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Project Manager</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/project-manager/2E.467" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">AI Product Manager – Energy Intelligence</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/ai-product-manager--energy-intelligence/6B.761" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Growth Specialist</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/growth-specialist/7B.366" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Product Manager – Software for Field Installers</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-product-manager--software-for-field-installers/37.B60" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Automation Software Engineer</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/automation-software-engineer/0A.567" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Debug Technician</h3>
+        <div class="job-location">📍 Ziporit – Nazareth Iliit, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/debug-technician/1F.656" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Failure Analysis Practical Engineer</h3>
+        <div class="job-location">📍 Maskit H – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/failure-analysis-practical-engineer/9D.862" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Quality Engineer</h3>
+        <div class="job-location">📍 Ziporit – Nazareth Iliit, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/quality-engineer/14.468" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Hardware Engineer – Expert Failure Analysis</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-hardware-engineer--expert-failure-analysis/F8.263" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Analog Chip Designer</h3>
+        <div class="job-location">📍 Maskit G – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/analog-chip-designer/85.A50" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Experienced Analog Chip Designer</h3>
+        <div class="job-location">📍 Maskit I – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-analog-chip-designer/22.A6A" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior ASIC Verification Engineer</h3>
+        <div class="job-location">📍 Maskit G – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-asic-verification-engineer/38.A51" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Automation &amp; Embedded Engineer</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/automation--embedded-engineer/45.C60" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Embedded Engineer</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-engineer/45.A64" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Embedded Infrastructure Engineer</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-infrastructure-engineer/F2.B65" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Embedded Software Engineer</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-software-engineer/25.C5E" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Embedded Software Engineer</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-software-engineer/7C.C62" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Experienced Software Engineer</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-software-engineer/F5.A6C" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Power Control Systems Engineer</h3>
+        <div class="job-location">📍 Maskit B – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/power-control-systems-engineer/E3.C6B" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Embedded Engineer</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-embedded-engineer/75.764" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Frontend Engineer</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-frontend-engineer/15.16F" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Analog Hardware Team Leader</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/analog-hardware-team-leader/C0.C65" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Electrical Practical Engineer</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/electrical-practical-engineer/A1.363" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Experienced Hardware Engineer</h3>
+        <div class="job-location">📍 Modi'in, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-hardware-engineer/3B.565" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Experienced PCB Layout Designer</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-pcb-layout-designer/C2.C62" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">PCB Layout Team Leader</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/pcb-layout-team-leader/27.C60" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Power Electronics Engineer</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-power-electronics-engineer/E1.66F" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Backend Developer</h3>
+        <div class="job-location">📍 Maskit I – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/backend-developer/FF.265" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">QA Automation Team Leader</h3>
+        <div class="job-location">📍 Maskit G – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/qa-automation-team-leader/A9.B68" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior AI Engineer</h3>
+        <div class="job-location">📍 Maskit I – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-ai-engineer/AB.A53" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Backend Developer</h3>
+        <div class="job-location">📍 Maskit I – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-backend-developer/FF.268" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Backend Engineer</h3>
+        <div class="job-location">📍 Maskit I – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-backend-engineer/0E.86A" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior DevOps Platform Engineer</h3>
+        <div class="job-location">📍 Maskit I – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-devops-platform-engineer/AE.756" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">C&amp;I Marketing Team Leader</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/ci-marketing-team-leader/9F.66E" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Customer Experience Specialist</h3>
+        <div class="job-location">📍 Maskit D – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/customer-experience-specialist/BF.C6D" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Logistics &amp; Customer Experience Team Leader</h3>
+        <div class="job-location">📍 Maskit D – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/logistics--customer-experience-team-leader/17.C63" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Forecast Analyst</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/forecast-analyst/C5.C61" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Sales Data Analyst</h3>
+        <div class="job-location">📍 Maskit E – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/sales-data-analyst/ED.761" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Technical Service Engineer – Tier 3</h3>
+        <div class="job-location">📍 Maskit D – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/technical-service-engineer---tier-3/A6.169" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Service Project Manager</h3>
+        <div class="job-location">📍 Maskit D – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/service-project-manager/55.766" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Technical Service Specialist – Tier 1</h3>
+        <div class="job-location">📍 Maskit A – Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/technical-service-specialist---tier-1/7B.761" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Integration Engineer</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/integration-engineer/80.664" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Integration Engineer</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/integration-engineer/7D.C65" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Integration Technician</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/integration-technician/74.965" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior Full Stack Engineer</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-full-stack-engineer/52.C50" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">SolarEdge</span>
+        <h3 class="job-title">Senior System Engineer</h3>
+        <div class="job-location">📍 Hamada 1, Herzliya, Israel</div>
+        <a href="https://www.comeet.com/jobs/SolarEdge/71.00A/senior-system-engineer/64.96E" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Sungrow Power</span>
+        <h3 class="job-title">Field Service Engineer – Israel</h3>
+        <div class="job-location">📍 Petah Tikva, Israel</div>
+        <a href="https://career-europe.sungrowpower.com/search?department=Israel" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Sungrow Power</span>
+        <h3 class="job-title">System Monitoring Admin – Israel</h3>
+        <div class="job-location">📍 Petah Tikva, Israel</div>
+        <a href="https://career-europe.sungrowpower.com/search?department=Israel" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Tomorrow.io</span>
+        <h3 class="job-title">AI First – Senior Product Manager</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://boards.greenhouse.io/tomorrow/jobs/7529959003" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Tomorrow.io</span>
+        <h3 class="job-title">Staff Engineer – AI Builder</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://boards.greenhouse.io/tomorrow/jobs/7763598003" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Backend Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/7986188002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Senior Algorithms Developer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/8533935002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Senior Backend Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/7992214002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Senior Backend Engineer – Routing Data</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/8587562002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Senior DevOps Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/8356511002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Senior Fullstack Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/8549463002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Senior Platform Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/8171972002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Senior Software Engineer, Routing</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/8327606002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">Software &amp; Data Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/8557879002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Via</span>
+        <h3 class="job-title">DevSecOps Engineer</h3>
+        <div class="job-location">📍 Tel Aviv, Israel</div>
+        <a href="https://job-boards.greenhouse.io/via/jobs/8574774002" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Wiliot</span>
+        <h3 class="job-title">Field Technician</h3>
+        <div class="job-location">📍 Israel – Caesarea</div>
+        <a href="https://www.wiliot.com/positions/position-91_b62" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Wiliot</span>
+        <h3 class="job-title">Hardware Test and Product Engineer</h3>
+        <div class="job-location">📍 Israel – Caesarea</div>
+        <a href="https://www.wiliot.com/positions/position-B8_76A" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Wiliot</span>
+        <h3 class="job-title">Logic Digital Verification Engineer</h3>
+        <div class="job-location">📍 Israel – Caesarea</div>
+        <a href="https://www.wiliot.com/positions/position-2a_f46" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Wiliot</span>
+        <h3 class="job-title">Senior Backend Engineer</h3>
+        <div class="job-location">📍 Israel – Tel Aviv</div>
+        <a href="https://www.wiliot.com/positions/position-d2_c6b" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Wiliot</span>
+        <h3 class="job-title">Senior Verification Engineer</h3>
+        <div class="job-location">📍 Israel – Caesarea</div>
+        <a href="https://www.wiliot.com/positions/position-52_451" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Nofar Energy</span>
+        <h3 class="job-title">Executive Office Manager</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.nofar-energy.com/careers/?ContentID=46628" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    
+      <div class="job-card">
+        <span class="company-tag">Nofar Energy</span>
+        <h3 class="job-title">Financial Reporting Controller</h3>
+        <div class="job-location">📍 Israel</div>
+        <a href="https://www.nofar-energy.com/careers/?ContentID=72651" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    </div>
+  <div id="noResults" class="no-results" style="display: none;"><h3>No jobs found</h3><p>Try adjusting your search criteria</p></div>
+</div>
+
+<script>
+const jobs = [
+{"company":"Aleph Farms","title":"Process Development Technician","location":"Rehovot, Center District, Israel","url":"https://aleph-farms.com/careers/"},
+{"company":"Aleph Farms","title":"Freelance PR & Marketing Operations (Israel)","location":"Israel","url":"https://aleph-farms.com/careers/"},
+{"company":"Aleph Farms","title":"QC Specialist","location":"Rehovot, Center District, Israel","url":"https://aleph-farms.com/careers/"},
+{"company":"Augury","title":"AI Applied Scientist – Insights & Recommendations","location":"Haifa, Israel (Hybrid)","url":"https://www.augury.com/careers/ai-applied-scientist-insights-recommendations-8549883002/"},
+{"company":"Augury","title":"AI/ML Applied Researcher – Insights & Recommendations","location":"Haifa, Israel (Hybrid)","url":"https://www.augury.com/careers/ai-ml-applied-researcher-insights-recommendations-8549267002/"},
+{"company":"Augury","title":"AI-Native Mobile Engineer – Deployment Platform","location":"Haifa, Israel (Hybrid)","url":"https://www.augury.com/careers/ai-native-mobile-engineer-deployment-platform-8565892002/"},
+{"company":"Augury","title":"Algorithm and Applied AI Scientist (DSP)","location":"Haifa, Israel (Hybrid)","url":"https://www.augury.com/careers/algorithm-and-applied-ai-scientist-dsp-8563603002/"},
+{"company":"Augury","title":"Experienced AI Software Engineer","location":"Haifa, Israel (Hybrid)","url":"https://www.augury.com/careers/experienced-ai-software-engineer-8542462002/"},
+{"company":"Augury","title":"ML Ops Engineer","location":"Haifa, Israel (Hybrid)","url":"https://www.augury.com/careers/ml-ops-engineer-8587599002/"},
+{"company":"Augury","title":"Software Data Engineer, Data Platform","location":"Haifa, Israel (Hybrid)","url":"https://www.augury.com/careers/software-data-engineer-data-platform-8576525002/"},
+{"company":"Beewise","title":"Hardware Team Lead","location":"Beit HaEmek (Northern District), IL","url":"https://www.comeet.com/jobs/beewise/0B.001/hardware-team-lead/E5.A61"},
+{"company":"Beewise","title":"Head of System Engineering","location":"Beit HaEmek (Northern District), IL","url":"https://www.comeet.com/jobs/beewise/0B.001/head-of-system-engineering/DE.C6D"},
+{"company":"Beewise","title":"Mechanical Engineer","location":"Beit HaEmek (Northern District), IL","url":"https://www.comeet.com/jobs/beewise/0B.001/mechanical-engineer/2E.C68"},
+{"company":"Beewise","title":"Senior Electronics Practical Engineer","location":"Beit HaEmek (Northern District), IL","url":"https://www.comeet.com/jobs/beewise/0B.001/senior-electronics-practical-engineer/8F.A6C"},
+{"company":"Beewise","title":"Senior Product Manager","location":"Beit HaEmek (Northern District), IL","url":"https://www.comeet.com/jobs/beewise/0B.001/senior-product-manager/9F.A65"},
+{"company":"Bluewhite","title":"IT & Information Systems Manager","location":"Tel Aviv, Israel","url":"https://www.comeet.com/jobs/bluewhite/D5.00D/it--information-systems-manager/D9.76D"},
+{"company":"Bluewhite","title":"Senior Backend Software Engineer","location":"Tel Aviv, Israel","url":"https://www.comeet.com/jobs/bluewhite/D5.00D/senior-backend-software-engineer/45.C61"},
+{"company":"Driivz","title":"Backend Team Lead","location":"Israel","url":"https://driivz.com/careers/co/israel/FA.B68/backend-team-lead/all"},
+{"company":"Driivz","title":"Chief Of Staff","location":"Israel","url":"https://driivz.com/careers/co/israel/BC.B66/chief-of-staff/all"},
+{"company":"Driivz","title":"Senior PMO","location":"Israel","url":"https://driivz.com/careers/co/israel/39.B6D/senior-pmo/all"},
+{"company":"Eco Wave Power","title":"Mechanical Engineer","location":"Tel Aviv, Israel","url":"https://www.ecowavepower.com/about/careers/"},
+{"company":"Eco Wave Power","title":"Project Manager (Mechanical Engineer - a MUST!)","location":"Tel Aviv, Israel","url":"https://www.ecowavepower.com/about/careers/"},
+{"company":"Enlight","title":"FP&A and Capital Markets Manager","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/fpa-and-capital-markets-manager/54.C6C"},
+{"company":"Enlight","title":"Director of Business Development – Enlight Local","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/director-of-business-development---enlight-local/BA.E51"},
+{"company":"Enlight","title":"Project Development Manager – Enlight Local","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/project-development-manager---enlight-local/4D.B6C"},
+{"company":"Enlight","title":"Director of Business Development – Agricultural Sector","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/director-of-business-development---agricultural-sector/0A.B68"},
+{"company":"Enlight","title":"Director of Data Center Strategy & Development","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/director-of-data-center-strategy--development/5B.A65"},
+{"company":"Enlight","title":"Project Development Manager – Renewable Energy","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/project-development-manager--renewable-energy-greenfield-to-infrastructure/E2.C63"},
+{"company":"Enlight","title":"Director of Finance, MENA","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/director-of-finance-mena/52.A69"},
+{"company":"Enlight","title":"Project Finance Manager","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/project-finance-manager/5C.761"},
+{"company":"Enlight","title":"Global HRBP","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/global-hrbp/17.669"},
+{"company":"Enlight","title":"Administrative Manager","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/administrative-manager/D1.D6F"},
+{"company":"Enlight","title":"Director of Engineering","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/director-of-engineering/33.B61"},
+{"company":"Enlight","title":"Operational Technology Manager","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/operational-technology-manager/4D.869"},
+{"company":"Enlight","title":"Operations Coordinator – Maternity Leave Replacement","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/operations-coordinator--maternity-leave-replacement/92.B66"},
+{"company":"Enlight","title":"PMO Construction","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/pmo-construction/AD.A6B"},
+{"company":"Enlight","title":"Procurement Manager","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/procurement-manager/BF.B5D"},
+{"company":"Enlight","title":"Project Engineer","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/project-engineer/69.066"},
+{"company":"Enlight","title":"Project Manager – Construction","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/project-manager--construction--israel-europe/A3.D4A"},
+{"company":"Enlight","title":"Technical Director","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/technical-director/D4.56C"},
+{"company":"Enlight","title":"Wind Farm Manager","location":"Israel","url":"https://www.comeet.com/jobs/enlightenergy/99.006/wind-farm-manager/9E.A69"},
+{"company":"Electreon","title":"Electrical Power Engineering","location":"HQ Beit Yanni, Israel","url":"https://electreon.com/about-us/careers/electrical-power-engineering/"},
+{"company":"Electreon","title":"Embedded Software Engineer","location":"Beit Yanai, Israel","url":"https://electreon.com/about-us/careers/embedded-software-engineer/"},
+{"company":"Electreon","title":"Electrical Engineering Team Leader","location":"HQ Beit Yanni, Israel","url":"https://electreon.com/about-us/careers/electrical-engineering-team-leader/"},
+{"company":"Electreon","title":"GA/VU INTEGRATOR","location":"Beit Yanni, Israel","url":"https://electreon.com/about-us/careers/ga-vu-integrator/"},
+{"company":"Electreon","title":"System Engineer","location":"Beit Yanni, Israel","url":"https://electreon.com/about-us/careers/system-engineer/"},
+{"company":"Electreon","title":"Strategic Buyer","location":"HQ Israel","url":"https://electreon.com/about-us/careers/strategic-buyer/"},
+{"company":"Electreon","title":"Mechanical Design Engineer Leader","location":"HQ Israel","url":"https://electreon.com/about-us/careers/mechanical-design-engineer-leader/"},
+{"company":"GreenRoad","title":"IT Manager","location":"Israel (Hybrid)","url":"https://greenroad.com/career/it-manager/"},
+{"company":"Optibus","title":"Chief Architect","location":"Israel","url":"https://optibus.com/company/careers/jobs/co/israel/52.A53/chief-architect/all"},
+{"company":"Optibus","title":"Engineering Group Manager","location":"Israel","url":"https://optibus.com/company/careers/jobs/co/israel/AB.A64/engineering-group-manager/all"},
+{"company":"Optibus","title":"Software Engineer, Gen AI","location":"Israel","url":"https://optibus.com/company/careers/jobs/co/israel/B4.861/software-engineer-gen-ai/all"},
+{"company":"Optibus","title":"Technical Writer","location":"Israel","url":"https://optibus.com/company/careers/jobs/co/israel/49.769/technical-writer/all"},
+{"company":"Percepto","title":"Information Security Officer","location":"Modi'in, Israel","url":"https://percepto.co/careers/information-security-officer-13-b6e/"},
+{"company":"Percepto","title":"Buyer Planner","location":"Modi'in, Israel","url":"https://percepto.co/careers/buyer-planner-ee-a6c/"},
+{"company":"Percepto","title":"Hardware Design Engineer","location":"Modi'in, Israel","url":"https://percepto.co/careers/hardware-design-engineer-0a-964/"},
+{"company":"Percepto","title":"Data Insights Operations","location":"Modi'in, Israel","url":"https://percepto.co/careers/data-insights-operations-ff-c6f/"},
+{"company":"Prisma Photonics","title":"Data Operations Specialist (Maternity Leave Replacement)","location":"Tel Aviv, Israel","url":"https://www.prismaphotonics.com/job/data-operations-specialist-maternity-leave-replacement/"},
+{"company":"Prisma Photonics","title":"Director of AI","location":"Tel Aviv, Israel","url":"https://www.prismaphotonics.com/job/director-of-ai/"},
+{"company":"Prisma Photonics","title":"DSP Researcher","location":"Tel Aviv, Israel","url":"https://www.prismaphotonics.com/job/dsp-researcher/"},
+{"company":"Prisma Photonics","title":"Electro Optics Physicist","location":"Tel Aviv, Israel","url":"https://www.prismaphotonics.com/job/electro-optics-physicist/"},
+{"company":"Prisma Photonics","title":"Senior Product Analyst","location":"Tel Aviv, Israel","url":"https://www.prismaphotonics.com/job/senior-product-analyst/"},
+{"company":"Prisma Photonics","title":"Talent Acquisition & HR Admin (Maternity leave replacement)","location":"Tel Aviv, Israel","url":"https://www.prismaphotonics.com/job/talent-acquisition-hr-admin-maternity-leave-replacement/"},
+{"company":"SolarEdge","title":"Battery Test Technician","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/battery-test-technician/7B.A61"},
+{"company":"SolarEdge","title":"Senior Embedded Software Engineer","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-embedded-software-engineer/3D.56F"},
+{"company":"SolarEdge","title":"Mechanical Team Leader – ATE Department","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/mechanical-team-leader--ate-department/B3.B62"},
+{"company":"SolarEdge","title":"Assembly Technician","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/assembly-technician/7C.76B"},
+{"company":"SolarEdge","title":"Components Reliability Engineer","location":"Maskit H – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/components-reliability-engineer/9B.A6A"},
+{"company":"SolarEdge","title":"Debug Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/debug-engineer/8C.867"},
+{"company":"SolarEdge","title":"Document Control Specialist","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/document-control-specialist/86.B63"},
+{"company":"SolarEdge","title":"Electrical Practical Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/electrical-practical-engineer/3B.564"},
+{"company":"SolarEdge","title":"Embedded Software Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-software-engineer/3B.561"},
+{"company":"SolarEdge","title":"Embedded Software Engineer – UPS","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-software-engineer---ups/D7.767"},
+{"company":"SolarEdge","title":"Experienced ATE HW Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-ate-hw-engineer/0E.860"},
+{"company":"SolarEdge","title":"Experienced Hardware Engineer – High Power","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-hardware-engineer---high-power/D7.766"},
+{"company":"SolarEdge","title":"Hardware Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/hardware-engineer/2B.56F"},
+{"company":"SolarEdge","title":"Integration Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/integration-engineer/C1.365"},
+{"company":"SolarEdge","title":"Junior Hardware Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/junior-hardware-engineer/72.A67"},
+{"company":"SolarEdge","title":"Mechanical Team Lead","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/mechanical--team-lead/3B.562"},
+{"company":"SolarEdge","title":"NPI Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/npi-engineer/B1.B64"},
+{"company":"SolarEdge","title":"Senior Technical Product Manager","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-technical-product-manager/7D.C6D"},
+{"company":"SolarEdge","title":"Building Electrician – Herzliya","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/building-electrician---herzliya/F3.B68"},
+{"company":"SolarEdge","title":"Building Electrician – Modi'in","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/building-electrician---modiin/F3.B63"},
+{"company":"SolarEdge","title":"Front Desk Associate – Reception","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/front-desk-associate---reception/F3.B69"},
+{"company":"SolarEdge","title":"Bookkeeper","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/bookkeeper/D8.B60"},
+{"company":"SolarEdge","title":"FP&A Inventory Finance Business Partner","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/fpa-inventory-finance-business-partner/D6.167"},
+{"company":"SolarEdge","title":"ATE Testers Technician (Level 2)","location":"Ziporit – Nazareth Iliit, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/ate-testers-technician-level-2/93.76F"},
+{"company":"SolarEdge","title":"ATE Testers Technicians Supervisor","location":"Ziporit – Nazareth Iliit, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/ate-testers-technicians-supervisor/0E.76A"},
+{"company":"SolarEdge","title":"Automatic Test Equipment Engineer","location":"Ziporit – Nazareth Iliit, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/automatic-test-equipment-engineer/0B.965"},
+{"company":"SolarEdge","title":"Programmer SMT & AOI","location":"Ziporit – Nazareth Iliit, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/programmer-smt--aoi/64.862"},
+{"company":"SolarEdge","title":"Maintenance Technician","location":"Ziporit – Nazareth Iliit, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/maintenance-technician/52.757"},
+{"company":"SolarEdge","title":"Cyber Security Architect","location":"Maskit A – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/cyber-security-architect/A4.A61"},
+{"company":"SolarEdge","title":"Operations Forecast Lead","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/operations-forecast-lead/D7.363"},
+{"company":"SolarEdge","title":"Project Manager","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/project-manager/2E.467"},
+{"company":"SolarEdge","title":"AI Product Manager – Energy Intelligence","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/ai-product-manager--energy-intelligence/6B.761"},
+{"company":"SolarEdge","title":"Growth Specialist","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/growth-specialist/7B.366"},
+{"company":"SolarEdge","title":"Senior Product Manager – Software for Field Installers","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-product-manager--software-for-field-installers/37.B60"},
+{"company":"SolarEdge","title":"Automation Software Engineer","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/automation-software-engineer/0A.567"},
+{"company":"SolarEdge","title":"Debug Technician","location":"Ziporit – Nazareth Iliit, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/debug-technician/1F.656"},
+{"company":"SolarEdge","title":"Failure Analysis Practical Engineer","location":"Maskit H – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/failure-analysis-practical-engineer/9D.862"},
+{"company":"SolarEdge","title":"Quality Engineer","location":"Ziporit – Nazareth Iliit, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/quality-engineer/14.468"},
+{"company":"SolarEdge","title":"Senior Hardware Engineer – Expert Failure Analysis","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-hardware-engineer--expert-failure-analysis/F8.263"},
+{"company":"SolarEdge","title":"Analog Chip Designer","location":"Maskit G – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/analog-chip-designer/85.A50"},
+{"company":"SolarEdge","title":"Experienced Analog Chip Designer","location":"Maskit I – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-analog-chip-designer/22.A6A"},
+{"company":"SolarEdge","title":"Senior ASIC Verification Engineer","location":"Maskit G – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-asic-verification-engineer/38.A51"},
+{"company":"SolarEdge","title":"Automation & Embedded Engineer","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/automation--embedded-engineer/45.C60"},
+{"company":"SolarEdge","title":"Embedded Engineer","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-engineer/45.A64"},
+{"company":"SolarEdge","title":"Embedded Infrastructure Engineer","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-infrastructure-engineer/F2.B65"},
+{"company":"SolarEdge","title":"Embedded Software Engineer","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-software-engineer/25.C5E"},
+{"company":"SolarEdge","title":"Embedded Software Engineer","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/embedded-software-engineer/7C.C62"},
+{"company":"SolarEdge","title":"Experienced Software Engineer","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-software-engineer/F5.A6C"},
+{"company":"SolarEdge","title":"Power Control Systems Engineer","location":"Maskit B – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/power-control-systems-engineer/E3.C6B"},
+{"company":"SolarEdge","title":"Senior Embedded Engineer","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-embedded-engineer/75.764"},
+{"company":"SolarEdge","title":"Senior Frontend Engineer","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-frontend-engineer/15.16F"},
+{"company":"SolarEdge","title":"Analog Hardware Team Leader","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/analog-hardware-team-leader/C0.C65"},
+{"company":"SolarEdge","title":"Electrical Practical Engineer","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/electrical-practical-engineer/A1.363"},
+{"company":"SolarEdge","title":"Experienced Hardware Engineer","location":"Modi'in, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-hardware-engineer/3B.565"},
+{"company":"SolarEdge","title":"Experienced PCB Layout Designer","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/experienced-pcb-layout-designer/C2.C62"},
+{"company":"SolarEdge","title":"PCB Layout Team Leader","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/pcb-layout-team-leader/27.C60"},
+{"company":"SolarEdge","title":"Senior Power Electronics Engineer","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-power-electronics-engineer/E1.66F"},
+{"company":"SolarEdge","title":"Backend Developer","location":"Maskit I – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/backend-developer/FF.265"},
+{"company":"SolarEdge","title":"QA Automation Team Leader","location":"Maskit G – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/qa-automation-team-leader/A9.B68"},
+{"company":"SolarEdge","title":"Senior AI Engineer","location":"Maskit I – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-ai-engineer/AB.A53"},
+{"company":"SolarEdge","title":"Senior Backend Developer","location":"Maskit I – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-backend-developer/FF.268"},
+{"company":"SolarEdge","title":"Senior Backend Engineer","location":"Maskit I – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-backend-engineer/0E.86A"},
+{"company":"SolarEdge","title":"Senior DevOps Platform Engineer","location":"Maskit I – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-devops-platform-engineer/AE.756"},
+{"company":"SolarEdge","title":"C&I Marketing Team Leader","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/ci-marketing-team-leader/9F.66E"},
+{"company":"SolarEdge","title":"Customer Experience Specialist","location":"Maskit D – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/customer-experience-specialist/BF.C6D"},
+{"company":"SolarEdge","title":"Logistics & Customer Experience Team Leader","location":"Maskit D – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/logistics--customer-experience-team-leader/17.C63"},
+{"company":"SolarEdge","title":"Forecast Analyst","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/forecast-analyst/C5.C61"},
+{"company":"SolarEdge","title":"Sales Data Analyst","location":"Maskit E – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/sales-data-analyst/ED.761"},
+{"company":"SolarEdge","title":"Technical Service Engineer – Tier 3","location":"Maskit D – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/technical-service-engineer---tier-3/A6.169"},
+{"company":"SolarEdge","title":"Service Project Manager","location":"Maskit D – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/service-project-manager/55.766"},
+{"company":"SolarEdge","title":"Technical Service Specialist – Tier 1","location":"Maskit A – Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/technical-service-specialist---tier-1/7B.761"},
+{"company":"SolarEdge","title":"Integration Engineer","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/integration-engineer/80.664"},
+{"company":"SolarEdge","title":"Integration Engineer","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/integration-engineer/7D.C65"},
+{"company":"SolarEdge","title":"Integration Technician","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/integration-technician/74.965"},
+{"company":"SolarEdge","title":"Senior Full Stack Engineer","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-full-stack-engineer/52.C50"},
+{"company":"SolarEdge","title":"Senior System Engineer","location":"Hamada 1, Herzliya, Israel","url":"https://www.comeet.com/jobs/SolarEdge/71.00A/senior-system-engineer/64.96E"},
+{"company":"Sungrow Power","title":"Field Service Engineer – Israel","location":"Petah Tikva, Israel","url":"https://career-europe.sungrowpower.com/search?department=Israel"},
+{"company":"Sungrow Power","title":"System Monitoring Admin – Israel","location":"Petah Tikva, Israel","url":"https://career-europe.sungrowpower.com/search?department=Israel"},
+{"company":"Tomorrow.io","title":"AI First – Senior Product Manager","location":"Tel Aviv, Israel","url":"https://boards.greenhouse.io/tomorrow/jobs/7529959003"},
+{"company":"Tomorrow.io","title":"Staff Engineer – AI Builder","location":"Tel Aviv, Israel","url":"https://boards.greenhouse.io/tomorrow/jobs/7763598003"},
+{"company":"Via","title":"Backend Engineer","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/7986188002"},
+{"company":"Via","title":"Senior Algorithms Developer","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/8533935002"},
+{"company":"Via","title":"Senior Backend Engineer","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/7992214002"},
+{"company":"Via","title":"Senior Backend Engineer – Routing Data","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/8587562002"},
+{"company":"Via","title":"Senior DevOps Engineer","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/8356511002"},
+{"company":"Via","title":"Senior Fullstack Engineer","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/8549463002"},
+{"company":"Via","title":"Senior Platform Engineer","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/8171972002"},
+{"company":"Via","title":"Senior Software Engineer, Routing","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/8327606002"},
+{"company":"Via","title":"Software & Data Engineer","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/8557879002"},
+{"company":"Via","title":"DevSecOps Engineer","location":"Tel Aviv, Israel","url":"https://job-boards.greenhouse.io/via/jobs/8574774002"},
+{"company":"Wiliot","title":"Field Technician","location":"Israel – Caesarea","url":"https://www.wiliot.com/positions/position-91_b62"},
+{"company":"Wiliot","title":"Hardware Test and Product Engineer","location":"Israel – Caesarea","url":"https://www.wiliot.com/positions/position-B8_76A"},
+{"company":"Wiliot","title":"Logic Digital Verification Engineer","location":"Israel – Caesarea","url":"https://www.wiliot.com/positions/position-2a_f46"},
+{"company":"Wiliot","title":"Senior Backend Engineer","location":"Israel – Tel Aviv","url":"https://www.wiliot.com/positions/position-d2_c6b"},
+{"company":"Wiliot","title":"Senior Verification Engineer","location":"Israel – Caesarea","url":"https://www.wiliot.com/positions/position-52_451"},
+{"company":"Nofar Energy","title":"Executive Office Manager","location":"Israel","url":"https://www.nofar-energy.com/careers/?ContentID=46628"},
+{"company":"Nofar Energy","title":"Financial Reporting Controller","location":"Israel","url":"https://www.nofar-energy.com/careers/?ContentID=72651"}
+];
+
+// Normalize messy location strings to clean city names
+function normalizeLocation(loc) {
+  if (loc.includes('Herzliya') || loc.includes('Herzl')) return 'Herzliya';
+  if (loc.includes('Tel Aviv')) return 'Tel Aviv';
+  if (loc.includes('Haifa')) return 'Haifa';
+  if (loc.includes("Modi'in") || loc.includes('Modiin') || loc.includes("Modi`in")) return "Modi'in";
+  if (loc.includes('Nazareth') || loc.includes('Zipori') || loc.includes('Ziporit') || loc.includes('Zirorit')) return 'Nazareth Illit Area';
+  if (loc.includes('Caesarea')) return 'Caesarea';
+  if (loc.includes('Petah Tikva') || loc.includes('Petach Tikva')) return 'Petah Tikva';
+  if (loc.includes('HaEmek') || loc.includes('Beit HaEmek') || loc.includes('Beit Haemek')) return 'Beit HaEmek (North)';
+  if (loc.includes('Rehovot')) return 'Rehovot';
+  if (loc.includes('Yanai') || loc.includes('Yannai')) return 'Beit Yanai';
+  if (loc.includes('Beer Sheva') || loc.includes('Beersheba')) return 'Beer Sheva';
+  if (loc.includes('Jerusalem')) return 'Jerusalem';
+  return 'Israel (Multiple Locations)';
+}
+
+// Build filter dropdowns
+const companies = [...new Set(jobs.map(j => j.company))].sort();
+const companySelect = document.getElementById('companyFilter');
+companies.forEach(c => {
+  const o = document.createElement('option');
+  o.value = o.textContent = c;
+  companySelect.appendChild(o);
+});
+
+const locationSelect = document.getElementById('locationFilter');
+const normalizedLocations = [...new Set(jobs.map(j => normalizeLocation(j.location)))].sort();
+normalizedLocations.forEach(l => {
+  const o = document.createElement('option');
+  o.value = o.textContent = l;
+  locationSelect.appendChild(o);
+});
+
+// Render
+let filtered = [...jobs];
+
+function render() {
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  const company = document.getElementById('companyFilter').value;
+  const location = document.getElementById('locationFilter').value;
+
+  filtered = jobs.filter(j => {
+    const matchSearch = !search ||
+      j.title.toLowerCase().includes(search) ||
+      j.company.toLowerCase().includes(search) ||
+      j.location.toLowerCase().includes(search);
+    const matchCompany = !company || j.company === company;
+    const matchLocation = !location || normalizeLocation(j.location) === location;
+    return matchSearch && matchCompany && matchLocation;
+  });
+
+  document.getElementById('resultsInfo').textContent =
+    `Showing ${filtered.length} of ${jobs.length} jobs`;
+
+  const grid = document.getElementById('jobsGrid');
+  if (filtered.length === 0) {
+    grid.style.display = 'none';
+    document.getElementById('noResults').style.display = 'block';
+  } else {
+    grid.style.display = 'grid';
+    document.getElementById('noResults').style.display = 'none';
+    grid.innerHTML = filtered.map(j => `
+      <div class="job-card">
+        <span class="company-tag">${j.company}</span>
+        <h3 class="job-title">${j.title}</h3>
+        <div class="job-location">📍 ${j.location}</div>
+        <a href="${j.url}" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+    `).join('');
+  }
+}
+
+document.getElementById('searchInput').addEventListener('input', render);
+document.getElementById('companyFilter').addEventListener('change', render);
+document.getElementById('locationFilter').addEventListener('change', render);
+document.getElementById('clearBtn').addEventListener('click', () => {
+  document.getElementById('searchInput').value = '';
+  document.getElementById('companyFilter').value = '';
+  document.getElementById('locationFilter').value = '';
+  render();
+});
+
+render();
+</script>
+
+<footer class="footer">
+  <p><strong>About this Jobs Board</strong></p>
+  <p>This board is curated and maintained by Amalia Helen to support Israel's growing climate tech community. For updates, suggestions, or to connect with me about my work, visit my <a href="https://www.linkedin.com/in/amaliahelen" target="_blank">LinkedIn profile</a>.</p>
+</footer>
+
+
+</body></html>
