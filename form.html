@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply — Become a Community Ambassador | Climatech Jobs for Israel</title>
+<meta name="description" content="Apply to become a volunteer Community Ambassador for Climatech Jobs Israel.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Crect width='44' height='44' rx='8' fill='%23059669'/%3E%3Ccircle cx='22' cy='22' r='14' stroke='white' stroke-width='2.5' fill='none'/%3E%3Cellipse cx='22' cy='22' rx='6' ry='14' stroke='white' stroke-width='2' fill='none'/%3E%3Cline x1='8' y1='22' x2='36' y2='22' stroke='white' stroke-width='2'/%3E%3Cpath d='M10 16h24M10 28h24' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --green-900: #064e3b;
+    --green-700: #065f46;
+    --green-600: #059669;
+    --green-500: #10b981;
+    --green-200: #a7f3d0;
+    --green-100: #d1fae5;
+    --green-50: #ecfdf5;
+    --ink: #1a202c;
+    --ink-soft: #374151;
+    --gray: #6b7280;
+    --bg: #f6faf8;
+    --border: #e5e7eb;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.65;
+  }
+
+  h1, h2, h3 { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 700; }
+
+  a { color: inherit; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at 85% 10%, #0d7a5f 0%, transparent 45%),
+                linear-gradient(150deg, var(--green-900) 0%, var(--green-700) 45%, var(--green-600) 100%);
+    padding: 2.75rem 1.5rem 6rem;
+    text-align: center;
+  }
+
+  .hero-network { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.35; }
+  .hero-hills { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 90px; z-index: 1; }
+  .hero-content { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; }
+
+  .logo-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.25);
+    color: white;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.5rem;
+  }
+  .logo-pill svg { width: 18px; height: 18px; }
+
+  .hero h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: white;
+    line-height: 1.25;
+  }
+
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+  }
+  .back-link:hover { color: white; }
+  .back-link svg { width: 15px; height: 15px; }
+
+  /* ---------- LAYOUT ---------- */
+  .container { max-width: 720px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+
+  .form-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -12px rgba(6,78,59,0.25);
+    margin-top: -4.5rem;
+    position: relative;
+    z-index: 3;
+    padding: 2.75rem;
+  }
+
+  .form-card > p { color: var(--ink-soft); margin-bottom: 1rem; }
+  .form-card > p:last-of-type { margin-bottom: 0; }
+
+  .form-intro { margin-bottom: 2.25rem; padding-bottom: 2.25rem; border-bottom: 1px solid var(--border); }
+
+  /* ---------- FIELDS ---------- */
+  .field { margin-bottom: 1.9rem; }
+  .field label.q {
+    display: block;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+  }
+  .field .req { color: var(--green-600); margin-left: 0.15rem; }
+  .field .helper {
+    color: var(--gray);
+    font-size: 0.87rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+  }
+
+  .text-input, textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: var(--ink);
+    background: white;
+  }
+  .text-input:focus, textarea:focus { outline: none; border-color: var(--green-600); }
+  textarea { resize: vertical; min-height: 90px; }
+
+  .options { display: flex; flex-direction: column; gap: 0.55rem; margin-top: 0.4rem; }
+  .option-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.65rem;
+    padding: 0.6rem 0.8rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  .option-row:hover { border-color: var(--green-200); background: var(--green-50); }
+  .option-row input { accent-color: var(--green-600); width: 17px; height: 17px; margin-top: 0.1rem; flex-shrink: 0; }
+  .option-row span { font-size: 0.97rem; color: var(--ink-soft); }
+  .option-row:has(input:checked) { border-color: var(--green-600); background: var(--green-50); }
+
+  .conditional-field {
+    display: none;
+    margin-top: 0.75rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--green-100);
+  }
+  .conditional-field.show { display: block; }
+  .conditional-field label {
+    display: block;
+    font-size: 0.87rem;
+    color: var(--ink-soft);
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+  }
+
+  .error-msg {
+    display: none;
+    color: #b91c1c;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+  }
+  .error-msg.show { display: block; }
+  .field.has-error .options .option-row { border-color: #fca5a5; }
+
+  /* ---------- SUBMIT ---------- */
+  .submit-row { margin-top: 2.5rem; text-align: center; }
+  .submit-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    background: var(--green-600);
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 0.95rem 2.4rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1.02rem;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 8px 20px -6px rgba(5,150,105,0.45);
+  }
+  .submit-btn:hover { background: var(--green-700); transform: translateY(-2px); }
+  .submit-btn svg { width: 18px; height: 18px; stroke: white; }
+
+  /* ---------- CONFIRMATION ---------- */
+  .confirmation { display: none; text-align: center; padding: 1.5rem 0; }
+  .confirmation.show { display: block; }
+  .confirmation .check-badge {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--green-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+  }
+  .confirmation .check-badge svg { width: 30px; height: 30px; stroke: var(--green-600); }
+  .confirmation h2 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+  .confirmation p { color: var(--ink-soft); max-width: 420px; margin: 0 auto; }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    background: var(--ink);
+    color: #cbd5e0;
+    text-align: center;
+    padding: 2.2rem 1rem;
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+  .footer .footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  .footer .footer-logo svg { width: 18px; height: 18px; stroke: var(--green-500); }
+  .footer a { color: #6ee7b7; text-decoration: none; }
+  .footer a:hover { text-decoration: underline; }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 1.7rem; }
+    .form-card { padding: 1.75rem; margin-top: -3rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <svg class="hero-network" viewBox="0 0 900 400" preserveAspectRatio="xMidYMid slice">
+    <g stroke="white" stroke-width="1" opacity="0.5">
+      <line x1="60" y1="60" x2="160" y2="120"/>
+      <line x1="160" y1="120" x2="110" y2="220"/>
+      <line x1="160" y1="120" x2="280" y2="80"/>
+      <line x1="700" y1="50" x2="800" y2="110"/>
+      <line x1="800" y1="110" x2="760" y2="210"/>
+      <line x1="800" y1="110" x2="870" y2="70"/>
+    </g>
+    <g fill="white">
+      <circle cx="60" cy="60" r="3.5"/><circle cx="160" cy="120" r="4.5"/><circle cx="110" cy="220" r="3"/><circle cx="280" cy="80" r="3.5"/>
+      <circle cx="700" cy="50" r="3.5"/><circle cx="800" cy="110" r="4.5"/><circle cx="760" cy="210" r="3"/><circle cx="870" cy="70" r="3"/>
+    </g>
+  </svg>
+
+  <div class="hero-content">
+    <a href="ambassador.html" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to ambassador program
+    </a><br>
+    <div class="logo-pill">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="2" y1="12" x2="22" y2="12"/>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+      </svg>
+      Climatech Jobs for Israel
+    </div>
+    <h1>Become a Community Ambassador</h1>
+  </div>
+
+  <svg class="hero-hills" viewBox="0 0 1200 90" preserveAspectRatio="none">
+    <path d="M0,60 C200,10 400,90 650,45 C850,10 1000,55 1200,30 L1200,90 L0,90 Z" fill="#f6faf8"/>
+  </svg>
+</div>
+
+<div class="container">
+  <div class="form-card">
+
+    <div id="formView">
+      <div class="form-intro">
+        <p>Climatech Jobs for Israel is building a small volunteer ambassador team to help grow the community through events, content, networking, knowledge sharing, partnerships, tech improvements, and new ideas.</p>
+        <p>Tell us a bit about yourself, what you're interested in, and how you might want to contribute.</p>
+      </div>
+
+      <form id="ambassadorForm" novalidate>
+
+        <div class="field">
+          <label class="q" for="full_name">Full name<span class="req">*</span></label>
+          <input class="text-input" type="text" id="full_name" name="full_name" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="email">Email<span class="req">*</span></label>
+          <input class="text-input" type="email" id="email" name="email" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="linkedin">LinkedIn profile<span class="req">*</span></label>
+          <input class="text-input" type="url" id="linkedin" name="linkedin" placeholder="https://www.linkedin.com/in/yourname" required>
+        </div>
+
+        <div class="field">
+          <label class="q" for="location">Where are you based?</label>
+          <input class="text-input" type="text" id="location" name="location">
+        </div>
+
+        <div class="field">
+          <label class="q" for="background">What is your current professional or academic background?<span class="req">*</span></label>
+          <div class="helper">Job title, field of study, company, sector, or anything else relevant.</div>
+          <textarea id="background" name="background" required></textarea>
+        </div>
+
+        <div class="field">
+          <label class="q" for="why_community">Why are you part of the climatech community?<span class="req">*</span></label>
+          <textarea id="why_community" name="why_community" required></textarea>
+        </div>
+
+        <div class="field">
+          <label class="q" for="goals_support">How could becoming a Community Ambassador support your own goals?<span class="req">*</span></label>
+          <textarea id="goals_support" name="goals_support" required></textarea>
+        </div>
+
+        <div class="field" id="interestsField">
+          <label class="q">What are you most interested in helping with?<span class="req">*</span></label>
+          <div class="options">
+            <label class="option-row"><input type="checkbox" name="interests" value="Events and programming"><span>Events and programming</span></label>
+            <label class="option-row"><input type="checkbox" name="interests" value="Community engagement and member connections"><span>Community engagement and member connections</span></label>
+            <label class="option-row"><input type="checkbox" name="interests" value="Social media and content"><span>Social media and content</span></label>
+            <label class="option-row"><input type="checkbox" name="interests" value="Climate knowledge sharing"><span>Climate knowledge sharing</span></label>
+            <label class="option-row"><input type="checkbox" name="interests" value="Job board support"><span>Job board support</span></label>
+            <label class="option-row"><input type="checkbox" name="interests" value="Website, tech, automation or scraping workflows"><span>Website, tech, automation or scraping workflows</span></label>
+            <label class="option-row"><input type="checkbox" name="interests" value="Partnerships and outreach"><span>Partnerships and outreach</span></label>
+            <label class="option-row"><input type="checkbox" name="interests" value="Employer or recruiter engagement"><span>Employer or recruiter engagement</span></label>
+            <label class="option-row"><input type="checkbox" name="interests" value="Funding or sponsorship strategy"><span>Funding or sponsorship strategy</span></label>
+            <label class="option-row"><input type="checkbox" id="interestsOther" name="interests" value="Something else"><span>Something else</span></label>
+          </div>
+          <div class="conditional-field" id="interestsOtherField">
+            <label for="interests_other_text">Tell us what you have in mind</label>
+            <input class="text-input" type="text" id="interests_other_text" name="interests_other_text">
+          </div>
+          <div class="error-msg" id="interestsError">Please select at least one option.</div>
+        </div>
+
+        <div class="field">
+          <label class="q">Do you already have an idea for something you'd like to build or improve?</label>
+          <div class="options">
+            <label class="option-row"><input type="radio" name="idea_status" value="Yes, I have an idea"><span>Yes, I have an idea</span></label>
+            <label class="option-row"><input type="radio" name="idea_status" value="Not yet, but I'd like to brainstorm"><span>Not yet, but I'd like to brainstorm</span></label>
+            <label class="option-row"><input type="radio" name="idea_status" value="A bit, but it needs shaping"><span>A bit, but it needs shaping</span></label>
+          </div>
+          <div class="conditional-field show" style="border-left-color: var(--border); padding-left: 0; margin-top: 0.9rem;">
+            <label for="idea_details">Tell us more about your idea, if you have one</label>
+            <input class="text-input" type="text" id="idea_details" name="idea_details">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q">What kind of ownership would feel realistic for you?</label>
+          <div class="options">
+            <label class="option-row"><input type="radio" name="ownership" value="I can own one small ongoing activity"><span>I can own one small ongoing activity</span></label>
+            <label class="option-row"><input type="radio" name="ownership" value="I can help run a specific project or event"><span>I can help run a specific project or event</span></label>
+            <label class="option-row"><input type="radio" name="ownership" value="I can support regularly but prefer not to lead yet"><span>I can support regularly but prefer not to lead yet</span></label>
+            <label class="option-row"><input type="radio" name="ownership" value="I'm open and would like to discuss"><span>I'm open and would like to discuss</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q">How much time can you realistically commit?<span class="req">*</span></label>
+          <div class="options">
+            <label class="option-row"><input type="radio" name="time_commitment" value="1 to 2 hours per week" required><span>1 to 2 hours per week</span></label>
+            <label class="option-row"><input type="radio" name="time_commitment" value="2 to 4 hours per week"><span>2 to 4 hours per week</span></label>
+            <label class="option-row"><input type="radio" name="time_commitment" value="4 plus hours per week"><span>4 plus hours per week</span></label>
+            <label class="option-row"><input type="radio" name="time_commitment" value="It depends on the initiative"><span>It depends on the initiative</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q">Can you commit to a short weekly group meeting to discuss priorities and keep things moving?<span class="req">*</span></label>
+          <div class="options">
+            <label class="option-row"><input type="radio" name="weekly_meeting" value="Yes" required><span>Yes</span></label>
+            <label class="option-row"><input type="radio" name="weekly_meeting" value="Usually, depending on timing"><span>Usually, depending on timing</span></label>
+            <label class="option-row"><input type="radio" name="weekly_meeting" value="Not weekly, but I can stay involved async"><span>Not weekly, but I can stay involved async</span></label>
+            <label class="option-row"><input type="radio" name="weekly_meeting" value="No"><span>No</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q">This is currently a volunteer role. Is that clear and aligned with what you're looking for?<span class="req">*</span></label>
+          <div class="options">
+            <label class="option-row"><input type="radio" name="volunteer_clarity" value="Yes" required><span>Yes</span></label>
+            <label class="option-row"><input type="radio" name="volunteer_clarity" value="Yes, but I'd like to understand expectations"><span>Yes, but I'd like to understand expectations</span></label>
+            <label class="option-row"><input type="radio" name="volunteer_clarity" value="Not sure"><span>Not sure</span></label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="q" for="anything_else">Anything else you'd like us to know?</label>
+          <textarea id="anything_else" name="anything_else"></textarea>
+        </div>
+
+        <div class="submit-row">
+          <button type="submit" class="submit-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Apply to become a Community Ambassador
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="confirmation" id="confirmationView">
+      <div class="check-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <h2>Thank you.</h2>
+      <p>We'll review your response and be in touch if there seems to be a good fit for the ambassador team.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </svg>
+    Climatech Jobs for Israel
+  </div>
+  <p>Built and run by Amalia Helen and Edo to support Israel's growing climate tech community. Connect on <a href="https://www.linkedin.com/in/amaliahelen" target="_blank">LinkedIn</a>.</p>
+</footer>
+
+<script>
+  const otherCheckbox = document.getElementById('interestsOther');
+  const otherField = document.getElementById('interestsOtherField');
+  otherCheckbox.addEventListener('change', () => {
+    otherField.classList.toggle('show', otherCheckbox.checked);
+    if (!otherCheckbox.checked) document.getElementById('interests_other_text').value = '';
+  });
+
+  const form = document.getElementById('ambassadorForm');
+  const interestsField = document.getElementById('interestsField');
+  const interestsError = document.getElementById('interestsError');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Native validation for required text/email/url/textarea/radio fields
+    let valid = form.reportValidity();
+
+    // Custom validation: at least one checkbox checked in "interests"
+    const anyInterestChecked = form.querySelectorAll('input[name="interests"]:checked').length > 0;
+    interestsField.classList.toggle('has-error', !anyInterestChecked);
+    interestsError.classList.toggle('show', !anyInterestChecked);
+    if (!anyInterestChecked) {
+      valid = false;
+      interestsField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    if (!valid) return;
+
+    // No backend is wired up yet — this is a front-end mock.
+    // To collect real responses, connect this form to a service like
+    // Formspree, Google Forms/Apps Script, or Airtable and POST the data there.
+    document.getElementById('formView').style.display = 'none';
+    const confirmation = document.getElementById('confirmationView');
+    confirmation.classList.add('show');
+    confirmation.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+</script>
+
+</body>
+</html>
