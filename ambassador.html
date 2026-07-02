@@ -85,19 +85,22 @@
   .hero h1 .highlight { color: var(--green-200); }
 
   .subhead-pill {
-    display: inline-block;
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.3);
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    background: white;
+    color: var(--green-700);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.02rem;
-    padding: 0.6rem 1.4rem;
+    padding: 0.75rem 1.6rem;
     border-radius: 999px;
     cursor: pointer;
+    box-shadow: 0 8px 20px -6px rgba(0,0,0,0.35);
     transition: background 0.2s ease, transform 0.2s ease;
   }
-  .subhead-pill:hover { background: rgba(255,255,255,0.22); transform: translateY(-1px); }
+  .subhead-pill:hover { background: var(--green-50); transform: translateY(-2px); }
+  .subhead-pill svg { width: 17px; height: 17px; stroke: var(--green-700); }
 
   /* ---------- LAYOUT ---------- */
   .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 4rem; }
